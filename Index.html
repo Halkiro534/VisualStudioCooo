@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>VSC</title>
+	<link rel="stylesheet" href="CSS/Styles.css">
+</head>
+<header>
+                <div class="wrap">
+      <div class="search">
+        <input type="text" class="searchTerm" placeholder="Type">
+        <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+	        <div class="buttons-container">
+                    <button class="btn btn-login" id="loginBtn">Увійти</button>
+                    <button class="btn btn-register" id="registerBtn">Реєстрація</button>
+                </div>
+		<center>
+			<h1><img src="IMG/VSC.png"  >   VISUAL STUDIO CODE</h1>
+		</center>
+	</div>
+</header>
+<body>
+	 <div class="modal" id="formModal">
+            <div class="modal-content">
+                <button class="close-btn" id="closeModal">&times;</button>
+                <h2 class="modal-title">Реєстрація</h2>
+                <p class="modal-subtitle">Створіть новий акаунт</p>
+                
+                <form class="register-form" id="modalForm">
+                    <div class="form-group">
+                        <label for="modalName">Ім'я</label>
+                        <input type="text" id="modalName" placeholder="Введіть ваше ім'я" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="modalEmail">Електронна пошта</label>
+                        <input type="email" id="modalEmail" placeholder="example@email.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="modalPassword">Пароль</label>
+                        <input type="password" id="modalPassword" placeholder="Введіть пароль" required>
+                    </div>
+                    
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="modalRemember">
+                            <label for="modalRemember">Запам'ятати мене</label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Зареєструватися</button>
+                </form>
+            </div>
+        </div>
+	<div class="container">
+<div class="feature-list">
+	<a class="a1" href="vsc.html">Visual Studio Code</a>
+	<a class="a1" href="Osoblivosti.html">Особливості</a>
+	<a class="a1" href="ss.html">Функціонал</a>
+	<a class="a1" href="test.html">Тест</a>
+	</div>
+	</div>
+	</div>
+</div>
+	<script src="JS/index.js"></script>
+<footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">@</div>
+                        <div>
+                            <strong>Пошта</strong>
+                            <a class="container3" href="mailto:ggoiovko193@gmail.com">ggoiovko193@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🌐</div>
+                        <div>
+                            <strong>Сайт</strong>
+                            <a class="container3" href="https://code.visualstudio.com" target="_blank">https://code.visualstudio.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <strong>Телефон</strong>
+                            <a class="container3" href="tel:+380123456789">+38 (012) 345-67-89</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="footer-section">
+                <h3>Інформація</h3>
+				<div class="container2">
+				<p>Цей проект був створений для показу фінкціоналу, особливостях та історію програми Visual Studio Code</p>
+				</div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Проет на Тему: Visual Studio Code. Усі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>

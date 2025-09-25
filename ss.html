@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Functio.css">
+    <title>Функціонал Visual Studio Code</title>
+</head>
+<header>
+            <div class="wrap">
+      <div class="search">
+        <input type="text" class="searchTerm" placeholder="Type">
+        <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+    	        <div class="buttons-container">
+                    <button class="btn btn-login" id="loginBtn">Увійти</button>
+                    <button class="btn btn-register" id="registerBtn">Реєстрація</button>
+                </div>
+    		<a href="Index.html" class="previous round" style="float: left">‹</a>
+            <h1><img src=IMG/VSC.png> Visual Studio Code</h1>
+</header>
+<body>
+    	 <div class="modal" id="formModal">
+            <div class="modal-content">
+                <button class="close-btn" id="closeModal">&times;</button>
+                <h2 class="modal-title">Реєстрація</h2>
+                <p class="modal-subtitle">Створіть новий акаунт</p>
+                
+                <form class="register-form" id="modalForm">
+                    <div class="form-group">
+                        <label for="modalName">Ім'я</label>
+                        <input type="text" id="modalName" placeholder="Введіть ваше ім'я" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="modalEmail">Електронна пошта</label>
+                        <input type="email" id="modalEmail" placeholder="example@email.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="modalPassword">Пароль</label>
+                        <input type="password" id="modalPassword" placeholder="Введіть пароль" required>
+                    </div>
+                    
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="modalRemember">
+                            <label for="modalRemember">Запам'ятати мене</label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Зареєструватися</button>
+                </form>
+            </div>
+        </div>
+        	<script src="JS/sss.js"></script>
+    <div class="container">
+        
+        <h2>Основні можливості</h2>
+        <div class="feature-list">
+            <div class="feature">
+                <h3>Підсвітка синтаксису</h3>
+                <p>Підтримка підсвічування синтаксису для більш ніж 50 мов програмування.</p>
+                <span class="tag">UI</span>
+                <span class="tag">Основне</span>
+            </div>
+            
+            <div class="feature">
+                <h3>Автодоповнення коду</h3>
+                <p>IntelliSense надає розумні автодоповнення на основі типів змінних, сигнатур функцій та імпортованих модулів.</p>
+                <span class="tag">Продуктивність</span>
+            </div>
+            
+            <div class="feature">
+                <h3>Налагодження</h3>
+                <p>Вбудований дебагер для швидкого виявлення та виправлення помилок.</p>
+                <span class="tag">Налагодження</span>
+            </div>
+            
+            <div class="feature">
+                <h3>Вбудований термінал</h3>
+                <p>Доступ до командного рядка без перемикання між вікнами.</p>
+                <span class="tag">Термінал</span>
+                <span class="key-combo">Ctrl+`</span>
+            </div>
+            
+            <div class="feature">
+                <h3>Керування версіями Git</h3>
+                <p>Інтегрована підтримка Git для керування версіями без виходу з редактора.</p>
+                <span class="tag">Git</span>
+                <span class="tag">Версії</span>
+            </div>
+            
+            <div class="feature">
+                <h3>Спільна робота</h3>
+                <p>Live Share дозволяє спільно редагувати код у реальному часі.</p>
+                <span class="tag">Співпраця</span>
+            </div>
+        </div>
+        
+        <h2>Приклади коду</h2>
+        <div class="code-block">
+// JavaScript з підсвічуванням синтаксису
+function calculateSum(a, b) {
+    return a + b;
+}
+
+// Приклад використання автодоповнення
+const result = calculateSum(5, 7);
+console.log(`Результат: ${result}`);
+
+// Асинхронна функція
+async function fetchData(url) {
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Помилка:', error);
+    }
+}
+        </div>
+        
+        <h2>Корисні комбінації клавіш</h2>
+        <div class="feature-list">
+            <div class="feature">
+                <h3>Пошук</h3>
+                <p><span class="key-combo">Ctrl+F</span> - Пошук у файлі</p>
+                <p><span class="key-combo">Ctrl+Shift+F</span> - Пошук у всіх файлах</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Навігація</h3>
+                <p><span class="key-combo">Ctrl+P</span> - Швидкий відкриття файлу</p>
+                <p><span class="key-combo">F12</span> - Перехід до визначення</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Редагування</h3>
+                <p><span class="key-combo">Ctrl+D</span> - Вибрати наступне входження</p>
+                <p><span class="key-combo">Alt+↑/↓</span> - Перемістити рядок</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Управління</h3>
+                <p><span class="key-combo">Ctrl+`</span> - Термінал</p>
+                <p><span class="key-combo">Ctrl+B</span> - Панель файлів</p>
+            </div>
+        </div>
+        
+        <h2>Розширення та кастомізація</h2>
+        <div class="feature-list">
+            <div class="feature">
+                <h3>Теми оформлення</h3>
+                <p>Змінюйте зовнішній вигляд редактора за допомогою тем.</p>
+                <span class="tag">UI</span>
+                <span class="tag">Кастомізація</span>
+            </div>
+            
+            <div class="feature">
+                <h3>Розширення</h3>
+                <p>Більше 30,000 розширень для додаткового функціоналу.</p>
+                <span class="tag">Розширення</span>
+                <span class="key-combo">Ctrl+Shift+X</span>
+            </div>
+            
+            <div class="feature">
+                <h3>Налаштування</h3>
+                <p>Гнучкі налаштування під ваші потреби.</p>
+                <span class="tag">Кастомізація</span>
+                <span class="key-combo">Ctrl+,</span>
+            </div>
+            
+            <div class="feature">
+                <h3>Snippets</h3>
+                <p>Створюйте власні фрагменти коду для швидшого написання.</p>
+                <span class="tag">Продуктивність</span>
+            </div>  
+                <div class="feature">
+                    <iframe width="350" height="200" src="https://www.youtube.com/embed/IREdc1FvRtU" title="майже повний курс по Visual Studio Code" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+        </div>
+    </div>
+<footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">@</div>
+                        <div>
+                            <strong>Пошта</strong>
+                            <a class="container3" href="mailto:ggoiovko193@gmail.com">ggoiovko193@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🌐</div>
+                        <div>
+                            <strong>Сайт</strong>
+                            <a class="container3" href="https://code.visualstudio.com" target="_blank">https://code.visualstudio.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <strong>Телефон</strong>
+                            <a class="container3" href="tel:+380123456789">+38 (012) 345-67-89</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="footer-section">
+                <h3>Інформація</h3>
+				<div class="container2">
+				<p>Цей проект був створений для показу фінкціоналу, особливостях та історію програми Visual Studio Code</p>
+				</div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Проет на Тему: Visual Studio Code. Усі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>

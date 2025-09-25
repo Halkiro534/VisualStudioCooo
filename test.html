@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест по Visual Studio Code</title>
+    <link rel="stylesheet" href="CSS/test.css">
+    <header>
+                <div class="wrap">
+      <div class="search">
+        <input type="text" class="searchTerm" placeholder="Type">
+        <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+        	        <div class="buttons-container">
+                    <button class="btn btn-login" id="loginBtn">Увійти</button>
+                    <button class="btn btn-register" id="registerBtn">Реєстрація</button>
+                </div>
+        <a href="Index.html" class="previous round" style="float: left">‹</a>
+		<h1><img src="IMG/VSC.png">  Тест по Visual Studio Code</h1>
+    </header>
+</head>
+<body>
+    	 <div class="modal" id="formModal">
+            <div class="modal-content">
+                <button class="close-btn" id="closeModal">&times;</button>
+                <h2 class="modal-title">Реєстрація</h2>
+                <p class="modal-subtitle">Створіть новий акаунт</p>
+                
+                <form class="register-form" id="modalForm">
+                    <div class="form-group">
+                        <label for="modalName">Ім'я</label>
+                        <input type="text" id="modalName" placeholder="Введіть ваше ім'я" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="modalEmail">Електронна пошта</label>
+                        <input type="email" id="modalEmail" placeholder="example@email.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="modalPassword">Пароль</label>
+                        <input type="password" id="modalPassword" placeholder="Введіть пароль" required>
+                    </div>
+                    
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="modalRemember">
+                            <label for="modalRemember">Запам'ятати мене</label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Зареєструватися</button>
+                </form>
+            </div>
+        </div>
+        	<script src="JS/test1.js"></script>
+        <form id="vsc-test">
+            <div class="container">
+            <div class="question">
+             <h3>1. Якою комбінацією клавіш можна швидко створити базову структуру HTML5-документа за допомогою Emmet?</h3> 
+<div class="options"> 
+<div class="option" onclick="selectOption(this)">а) html:5 + Tab</div> 
+<div class="option" onclick="selectOption(this)">б) ! + Tab</div> 
+<div class="option" onclick="selectOption(this)">в) doc + Tab</div> 
+<div class="option" onclick="selectOption(this)">г) template + Tab</div> 
+</div> 
+</div> 
+
+<div class="question"> 
+<h3>2. Яка команда на панелі команд (Ctrl+Shift+P) дозволяє налаштувати колірну тему VS Code?</h3> 
+<div class="options"> 
+<div class="option" onclick="selectOption(this)">а) Settings: Open Settings</div> 
+<div class="option" onclick="selectOption(this)">б) Preferences: Color Theme</div> 
+<div class="option" onclick="selectOption(this)">в) Theme: Change Color Theme</div> 
+<div class="option" onclick="selectOption(this)">г) View: Appearance</div> 
+</div> 
+</div>
+
+            <div class="question"> 
+<h3>3. Що робить комбінація клавіш Ctrl+` (зворотний апостроф) у VS Code?</h3> 
+<div class="options"> 
+<div class="option" onclick="selectOption(this)">а) Відкриває термінал</div> 
+<div class="option" onclick="selectOption(this)">б) Закоментувати виділений код</div> 
+<div class="option" onclick="selectOption(this)">в) Перемикає між відкритими файлами</div> 
+<div class="option" onclick="selectOption(this)">г) Форматує документ</div> 
+</div> 
+</div> 
+
+<div class="question"> 
+<h3>4. Який синтаксис Emmet створить навігацію із трьома пунктами списку?</h3> 
+<div class="options"> 
+<div class="option" onclick="selectOption(this)">а) nav>ul>li*3</div> 
+<div class="option" onclick="selectOption(this)">б) nav>li*3</div> 
+<div class="option" onclick="selectOption(this)">в) navigation>list*3</div> 
+<div class="option" onclick="selectOption(this)">г) menu>items*3</div> 
+</div> 
+</div> 
+
+<div class="question"> 
+<h3>5. Яке розширення рекомендується для Live Preview HTML-сторінок?</h3> 
+<div class="options"> 
+<div class="option" onclick="selectOption(this)">а) Live Server</div> 
+<div class="option" onclick="selectOption(this)">б) HTML Preview</div> 
+<div class="option" onclick="selectOption(this)">в) Browser Preview</div> 
+<div class="option" onclick="selectOption(this)">г) Всі перелічені</div> 
+</div> 
+</div>
+            
+            <div class="question"> 
+<h3>6. Якою комбінацією клавіш можна швидко дублювати поточний рядок VS Code?</h3> 
+<div class="options"> 
+<div class="option" onclick="selectOption(this)">а) Ctrl + D</div> 
+<div class="option" onclick="selectOption(this)">б) Alt + Shift + ↓</div> 
+<div class="option" onclick="selectOption(this)">в) Ctrl+C, потім Ctrl+V</div> 
+<div class="option" onclick="selectOption(this)">г) Усі варіанти вірні</div> 
+</div> 
+</div> 
+
+
+<div class="question"> 
+<h3>7. Що дозволяє робити розширення "Auto Rename Tag"?</h3> 
+<div class="options"> 
+<div class="option" onclick="selectOption(this)">а) Автоматично перейменовувати парні HTML-теги</div> 
+<div class="option" onclick="selectOption(this)">б) Автоматично закривати відкриті теги</div> 
+<div class="option" onclick="selectOption(this)">в) Автоматично форматувати код</div> 
+<div class="option" onclick="selectOption(this)">г) Автоматично додавати атрибути тегам</div> 
+</div> 
+</div> 
+
+
+<div class="question"> 
+<h3>8. Який Emmet-абревіатурою можна створити div із класом "container"?</h3> 
+<div class="options"> 
+<div class="option" onclick="selectOption(this)">а) .container</div> 
+<div class="option" onclick="selectOption(this)">б) div.container</div> 
+<div class="option" onclick="selectOption(this)">в) container</div> 
+<div class="option" onclick="selectOption(this)">г) Будь-який із перелічених</div> 
+</div> 
+</div>
+
+            
+            <div class="question"> 
+<h3>9. Що робить комбінація клавіш Ctrl+/?</h3> 
+<div class="options"> 
+<div class="option" onclick="selectOption(this)">а) Закоментувати/розкоментувати рядок</div> 
+<div class="option" onclick="selectOption(this)">б) Розділити редактор на дві панелі</div> 
+<div class="option" onclick="selectOption(this)">в) Пошук за файлом</div> 
+<div class="option" onclick="selectOption(this)">г) Швидкий перехід до рядка</div> 
+</div> 
+</div>
+
+           
+            <div class="question">
+                <h3>10. Яка функція VS Code дозволяє працювати з системою контролю версій Git без терміналу?</h3>
+                <div class="options">
+                    <div class="option" onclick="selectOption(this)">а) Source Control (Ctrl+Shift+G)</div>
+                    <div class="option" onclick="selectOption(this)">б) Git Integration</div>
+                    <div class="option" onclick="selectOption(this)">в) Version Manager</div>
+                    <div class="option" onclick="selectOption(this)">г) Code History</div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button type="button" id="submit-btn" onclick="checkAnswers()">Перевірити відповіді</button>
+            </div>
+        </form>
+        
+        <div class="result" id="result">
+            <h2>Результат теста</h2>
+            <div class="score" id="score">0/5</div>
+            <div id="detailed-results"></div>
+        </div>
+    </div>
+</div>
+
+    <script src="JS/test.js"></script>
+<footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">@</div>
+                        <div>
+                            <strong>Пошта</strong>
+                            <a class="container3" href="mailto:ggoiovko193@gmail.com">ggoiovko193@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🌐</div>
+                        <div>
+                            <strong>Сайт</strong>
+                            <a class="container3" href="https://code.visualstudio.com" target="_blank">https://code.visualstudio.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <strong>Телефон</strong>
+                            <a class="container3" href="tel:+380123456789">+38 (012) 345-67-89</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="footer-section">
+                <h3>Інформація</h3>
+				<div class="container2">
+				<p>Цей проект був створений для показу фінкціоналу, особливостях та історію програми Visual Studio Code</p>
+				</div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Проет на Тему: Visual Studio Code. Усі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>
